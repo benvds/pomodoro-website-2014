@@ -5,12 +5,33 @@ body {
     font-size: 18px;
     line-height: 1.4;
     color: #444;
+    text-align: center;
+
+    background: black url('/images/bitmaps/eniac2-1000-darkened.png') repeat center -200px;
+    background-attachment: fixed;
 }
 
-.container {
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.page {
+    width: 100%;
+    margin: 30em 0 5em;
+    background-color: white;
+}
+
+.container, .site-header {
     max-width: 35em;
     margin: 0 auto;
     padding: 1em;
+}
+
+.site-header {
+    position: absolute;
+    top: 2em;
+    color: white;
 }
 
 .browsehappy {
