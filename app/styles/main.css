@@ -16,22 +16,19 @@ ul {
     list-style-position: inside;
 }
 
-.page {
-    width: 100%;
-    margin: 30em 0 5em;
-    background-color: white;
-}
-
-.container, .site-header {
+.site-header, .entry-content, .site-footer {
     max-width: 35em;
     margin: 0 auto;
     padding: 1em;
 }
 
 .site-header {
-    position: absolute;
-    top: 2em;
     color: white;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
 }
 
 .browsehappy {
