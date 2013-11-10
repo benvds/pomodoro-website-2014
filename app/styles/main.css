@@ -26,6 +26,27 @@ ul {
     color: white;
 }
 
+.logo {
+    width: 10em;
+}
+
+.pay-off {
+    font-size: 200%;
+}
+
+.portrait {
+    width: 12em;
+}
+
+.usps {
+    font-size: 135%;
+    line-height: 200%;
+}
+
+.references {
+    list-style: none;
+}
+
 .container {
     width: 100%;
     background-color: white;
