@@ -41,7 +41,7 @@ ul {
     font-size: 200%;
 }
 
-.portrait {
+.portrait-img {
     width: 12em;
 }
 
@@ -79,4 +79,20 @@ ul {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+@media only screen and (min-width: 35em) {
+    .portrait, .intro-text {
+        float: left;
+    }
+    .portrait {
+        width: 35%;
+    }
+    .portrait-img {
+        width: 9em;
+        margin: 1em;
+    }
+    .intro-text {
+        width: 65%;
+    }
 }
