@@ -1,5 +1,12 @@
+*, *:before, *:after {
+    box-sizing: boder-box;
+}
+
+.clearfix { *zoom:1; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
 body {
-    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
     font-family: 'Arvo', monospace;
     font-weight: 400;
     font-size: 18px;
@@ -43,13 +50,28 @@ ul {
     line-height: 200%;
 }
 
-.references {
-    list-style: none;
-}
-
 .container {
     width: 100%;
     background-color: white;
+}
+
+.references {
+    display: inline-block;
+}
+.reference {
+    width: 6em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo-viaviela {
+    width: 3em;
+}
+.logo-cammio {
+    width: 5em;
+}
+.logo-ultimaker {
+    width: 5em;
 }
 
 .browsehappy {
