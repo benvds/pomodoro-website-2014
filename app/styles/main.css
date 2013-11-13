@@ -18,13 +18,33 @@ body {
     background-attachment: fixed;
 }
 
+h2 {
+    color: #e5402d;
+}
+
 ul {
     padding: 0;
     list-style-position: inside;
 }
 
+blockquote {
+    color: #888;
+}
+q {
+    font-style: italic;
+}
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+
 .site-header, .entry-content, .site-footer {
-    max-width: 35em;
+    max-width: 40em;
     margin: 0 auto;
     padding: 1em;
 }
@@ -47,7 +67,7 @@ ul {
 
 .usps {
     font-size: 135%;
-    line-height: 200%;
+    line-height: 150%;
 }
 
 .container {
@@ -82,17 +102,29 @@ ul {
 }
 
 @media only screen and (min-width: 35em) {
-    .portrait, .intro-text {
+    .site-header-top {
+        margin: 1em 0;
+    }
+    .logo, .intro-text {
         float: left;
     }
-    .portrait {
-        width: 35%;
+    .pay-off, .portrait {
+        float: right;
+    }
+    .logo, .portrait {
+        width: 33%;
     }
     .portrait-img {
         width: 9em;
         margin: 1em;
     }
-    .intro-text {
-        width: 65%;
+    .pay-off, .intro-text {
+        width: 63%;
+    }
+    .pay-off {
+        margin: 0;
+    }
+    .usps {
+        margin: 0 0 1em;
     }
 }
