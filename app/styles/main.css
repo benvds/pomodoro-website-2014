@@ -13,6 +13,9 @@ body {
     line-height: 1.4;
     color: #444;
     text-align: center;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     background: black url('/images/bitmaps/eniac2-1000-darkened.png') repeat center -200px;
     background-attachment: fixed;
