@@ -19,6 +19,7 @@ body {
 }
 
 h2 {
+    margin: 2em 0 1em;
     color: #e5402d;
 }
 
@@ -46,14 +47,15 @@ q:after {
 .site-header, .entry-content, .site-footer {
     max-width: 40em;
     margin: 0 auto;
-    padding: 1em;
+    /* padding: 1em; */
+    border: 1px solid transparent;
 }
 
 .site-header {
     color: white;
 }
 
-.logo {
+.logo-pomodoro {
     width: 10em;
 }
 
@@ -70,19 +72,23 @@ q:after {
     line-height: 150%;
 }
 
+.reference {
+    margin: 2em 0 1em;
+}
+
 .container {
     width: 100%;
     background-color: white;
 }
 
-.references {
-    display: inline-block;
-}
-.reference {
-    width: 6em;
-    text-align: center;
-    vertical-align: middle;
-}
+/* .references { */
+/*     display: inline-block; */
+/* } */
+/* .reference { */
+/*     width: 6em; */
+/*     text-align: center; */
+/*     vertical-align: middle; */
+/* } */
 
 .logo-viaviela {
     width: 3em;
@@ -105,13 +111,13 @@ q:after {
     .site-header-top {
         margin: 1em 0;
     }
-    .logo, .intro-text {
+    .logo-pomodoro, .intro-text {
         float: left;
     }
     .pay-off, .portrait {
         float: right;
     }
-    .logo, .portrait {
+    .logo-pomodoro, .portrait {
         width: 33%;
     }
     .portrait-img {
@@ -126,5 +132,18 @@ q:after {
     }
     .usps {
         margin: 0 0 1em;
+    }
+    .reference .logo, .reference blockquote {
+        float: left;
+    }
+    .reference:nth-child(odd) .logo {
+        float: right;
+    }
+    .reference .logo {
+        width: 33%;
+    }
+    .reference blockquote {
+        width: 63%;
+        margin: 0;
     }
 }
