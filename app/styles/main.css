@@ -91,6 +91,10 @@ button {
 .usps {
     font-size: 135%;
     line-height: 150%;
+    list-style: none;
+}
+.usps li:before {
+    content: '✓ ';
 }
 
 .reference {
