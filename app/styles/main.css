@@ -17,7 +17,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background: black url('/images/bitmaps/eniac2-1000-darkened.png') repeat center -200px;
+    background: black url('/images/bitmaps/eniac-darkened80.png') repeat center -200px;
     background-attachment: fixed;
 }
 
@@ -81,6 +81,10 @@ button {
 }
 
 .pay-off {
+    font-size: 150%;
+}
+
+.intro-text {
     font-size: 200%;
 }
 
@@ -88,9 +92,16 @@ button {
     width: 12em;
 }
 
+.challenges {
+    font-size: 125%;
+}
+.challenges, .usps {
+    margin-bottom: 2em;
+}
+.challenges li, .usps li {
+    margin-bottom: .5em;
+}
 .usps {
-    font-size: 135%;
-    line-height: 150%;
     list-style: none;
 }
 .usps li:before {
@@ -176,7 +187,7 @@ button {
     .site-header-top {
         margin: 1em 0;
     }
-    .logo-pomodoro, .intro-text {
+    .logo-pomodoro {
         float: left;
     }
     .pay-off, .portrait {
@@ -189,7 +200,7 @@ button {
         width: 9em;
         margin: 1em;
     }
-    .pay-off, .intro-text {
+    .pay-off {
         width: 63%;
     }
     .pay-off {
