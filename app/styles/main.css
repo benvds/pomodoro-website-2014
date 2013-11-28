@@ -100,6 +100,7 @@ button {
 }
 
 .intro-text {
+    max-width: 19em;
     margin: 0 0 1em;
     font-size: 200%;
 }
@@ -130,14 +131,9 @@ button {
     background-color: white;
 }
 
-/* .references { */
-/*     display: inline-block; */
-/* } */
-/* .reference { */
-/*     width: 6em; */
-/*     text-align: center; */
-/*     vertical-align: middle; */
-/* } */
+.email {
+    margin-bottom: 1em;
+}
 
 .logo-viaviela {
     width: 3em;
@@ -147,6 +143,20 @@ button {
 }
 .logo-ultimaker {
     width: 5em;
+}
+
+.organizations {
+    width: 14em;
+    margin: 1em auto;
+    list-style: none;
+}
+.organizations > li {
+    float: left;
+
+}
+.organization {
+    width: 5em;
+    margin: 0 1em;
 }
 
 /* MAILCHIMP */
