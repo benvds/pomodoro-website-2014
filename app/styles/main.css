@@ -26,9 +26,15 @@ h2 {
     color: #e5402d;
 }
 
+ul, p {
+    margin: 1em 0 2em;
+}
 ul {
     padding: 0;
     list-style-position: inside;
+}
+li {
+    margin-bottom: .5em;
 }
 
 blockquote {
@@ -45,6 +51,15 @@ q:before {
 }
 q:after {
     content: close-quote;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 50%;
+    margin: 2em auto;
+    border: 0;
+    border-top: 1px solid #ccc;
 }
 
 input[type=email], button {
@@ -68,7 +83,7 @@ button {
 .site-header, .entry-content, .site-footer {
     max-width: 40em;
     margin: 0 auto;
-    /* padding: 1em; */
+    padding: 1em;
     border: 1px solid transparent;
 }
 
@@ -85,6 +100,7 @@ button {
 }
 
 .intro-text {
+    margin: 0 0 1em;
     font-size: 200%;
 }
 
@@ -93,13 +109,10 @@ button {
 }
 
 .challenges {
-    font-size: 125%;
 }
 .challenges, .usps {
     margin-bottom: 2em;
-}
-.challenges li, .usps li {
-    margin-bottom: .5em;
+    /* font-size: 125%; */
 }
 .usps {
     list-style: none;
@@ -198,17 +211,14 @@ button {
     }
     .portrait-img {
         width: 9em;
-        margin: 1em;
+        margin: 0 1em;
     }
     .pay-off {
         width: 63%;
     }
-    .pay-off {
-        margin: 0;
-    }
-    .usps {
-        margin: 0 0 1em;
-    }
+    /* .pay-off { */
+    /*     margin: 0; */
+    /* } */
     .reference .logo, .reference blockquote {
         float: left;
     }
