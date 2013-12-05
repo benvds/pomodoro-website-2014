@@ -199,6 +199,55 @@ button {
 
 /* END MAILCHIMP */
 
+.panel p {
+    margin: 1em 0;
+}
+.subscription-panel {
+    position: fixed;
+    right: 2em;
+    bottom: 0;
+    width: 400px;
+    padding: 0 3px;
+    background-color: #e5402d;
+    background-color: hsla(6, 78%, 54%, .9);
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+    text-align: left;
+    box-shadow: 0 0 1em #ddd;
+    box-shadow: 0 0 1em hsla(0, 0%, 0%, .33);
+}
+.panel-heading h2 {
+    margin: 0;
+    padding-right: 1em;
+    font-size: 1em;
+    color: white;
+}
+.toggle-icons {
+    position: absolute;
+    right: .8em;
+    top: 1em;
+}
+.panel-heading {
+    position: relative;
+    padding: .5em 1em;
+    color: white;
+    cursor: pointer;
+}
+.panel-closed .panel-body {
+    display: none;
+}
+.fa-caret-up, .panel-closed .fa-times {
+    display: none !important;
+}
+.panel-closed .fa-caret-up, .fa-times {
+    display: inline !important;
+}
+.panel-body {
+    background-color: white;
+    padding: .2em 1em;
+    border-radius: .2em;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -241,5 +290,11 @@ button {
     .reference blockquote {
         width: 63%;
         margin: 0;
+    }
+}
+
+@media only screen and (max-width: 35em) {
+    .subscription-panel {
+        display: none;
     }
 }
