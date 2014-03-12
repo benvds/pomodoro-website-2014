@@ -30,8 +30,8 @@ ul, p {
     margin: 1em 0 2em;
 }
 ul {
-    padding: 0;
-    list-style-position: inside;
+    padding: 0 0 0 1em;
+    /* list-style-position: inside; */
 }
 li {
     margin-bottom: .5em;
@@ -80,6 +80,13 @@ button {
     border-bottom-color: #555;
 }
 
+a:link, a:visited, a:active {
+    color: #3689b3;
+}
+a:hover {
+    color: #26617f;
+}
+
 .site-header, .entry-content, .site-footer {
     max-width: 40em;
     margin: 0 auto;
@@ -105,8 +112,15 @@ button {
     font-size: 200%;
 }
 
+.entry-content {
+    text-align: left;
+}
+
+.portrait {
+    text-align: center;
+}
 .portrait-img {
-    width: 12em;
+    width: 14em;
 }
 
 .challenges {
@@ -123,7 +137,20 @@ button {
 }
 
 .reference {
-    margin: 2em 0 1em;
+    margin: 2em 0;
+    padding: 2em 1em;
+    background-color: #e8e8e8;
+}
+.reference footer {
+    text-align: center;
+}
+.reference .portrait-img {
+    width: 8em;
+    margin: 1em;
+}
+
+.about .portrait {
+    text-align: center;
 }
 
 .container {
@@ -157,6 +184,10 @@ button {
 .organization {
     width: 5em;
     margin: 0 1em;
+}
+
+.signup form, .contact .vcard {
+    text-align: center;
 }
 
 /* MAILCHIMP */
@@ -256,11 +287,12 @@ button {
 }
 
 @media only screen and (min-width: 35em) {
+    ul {
+        padding: 0 0 0 3em;
+    }
+
     .site-header-top {
         margin: 1em 0;
-    }
-    .logo-pomodoro {
-        float: left;
     }
     .pay-off, .portrait {
         float: right;
@@ -269,7 +301,6 @@ button {
         width: 33%;
     }
     .portrait-img {
-        width: 9em;
         margin: 0 1em;
     }
     .pay-off {
@@ -278,17 +309,22 @@ button {
     /* .pay-off { */
     /*     margin: 0; */
     /* } */
-    .reference .logo, .reference blockquote {
+    .about, .reference {
+        margin: 2em;
+        text-align: center;
+    }
+    .about p, .about .portrait, .reference q, .reference footer {
         float: left;
     }
-    .reference:nth-child(odd) .logo {
+    .reference:nth-child(odd) footer {
         float: right;
     }
-    .reference .logo {
+    .about .portrait, .reference footer {
         width: 33%;
+        font-size: .66em;
     }
-    .reference blockquote {
-        width: 63%;
+    .about p, .reference q {
+        width: 66%;
         margin: 0;
     }
 }
