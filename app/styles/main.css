@@ -102,6 +102,20 @@ a:hover {
     width: 10em;
 }
 
+.site-nav {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+.site-nav a {
+    padding: 0 .5em;
+    color: white;
+    text-decoration: none;
+}
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
 .pay-off {
     font-size: 150%;
 }
@@ -330,6 +344,19 @@ a:hover {
 }
 
 @media only screen and (max-width: 35em) {
+    .site-header-top {
+        clear: none;
+    }
+    .site-nav {
+        display: block;
+        position: relative;
+        top: auto;
+        right: auto;
+        text-align: right;
+    }
+    .logo-pomodoro {
+        margin: 1em 0;
+    }
     .subscription-panel {
         display: none;
     }
