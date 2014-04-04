@@ -306,9 +306,9 @@ a:hover {
     .pay-off {
         width: 63%;
     }
-    /* .pay-off { */
-    /*     margin: 0; */
-    /* } */
+    .signup-crash-course {
+        display: none;
+    }
     .about, .reference {
         margin: 2em;
         text-align: center;
