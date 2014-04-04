@@ -194,7 +194,7 @@ a:hover {
 
 /* MailChimp Form Embed Code - Slim - 08/17/2011 */
 
-#mc_embed_signup div#mce-responses {
+.mc_embed_signup div.mce-responses {
     float: left;
     top: -1.4em;
     padding: 0em .5em 0em .5em;
@@ -203,7 +203,7 @@ a:hover {
     margin: 0 5%;
     clear: both;
 }
-#mc_embed_signup div.response {
+.mc_embed_signup div.response {
     margin: 1em 0;
     padding: 1em .5em .5em 0;
     font-weight: bold;
@@ -212,14 +212,14 @@ a:hover {
     z-index: 1;
     width: 80%;
 }
-#mc_embed_signup #mce-error-response {
+.mc_embed_signup .mce-error-response {
     display: none;
 }
-#mc_embed_signup #mce-success-response {
+.mc_embed_signup .mce-success-response {
     color: #529214;
     display: none;
 }
-#mc_embed_signup label.error {
+.mc_embed_signup label.error {
     display: block;
     float: none;
     width: auto;
