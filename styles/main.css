@@ -24,6 +24,7 @@ body {
 h2 {
     margin: 2em 0 1em;
     color: #e5402d;
+    text-align: center;
 }
 
 ul, p {
@@ -98,6 +99,10 @@ a:hover {
     color: white;
 }
 
+.site-footer {
+    padding-bottom: 4em;
+}
+
 .logo-pomodoro {
     width: 10em;
 }
@@ -161,6 +166,10 @@ a:hover {
 .reference .portrait-img {
     width: 8em;
     margin: 1em;
+}
+
+.results {
+    font-weight: bold;
 }
 
 .about .portrait {
