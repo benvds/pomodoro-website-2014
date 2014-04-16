@@ -17,7 +17,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background: black url('../images/bitmaps/eniac-darkened80.png') repeat center -200px;
+    background: black url('/images/bitmaps/eniac-darkened80.png') repeat center -200px;
     background-attachment: fixed;
 }
 

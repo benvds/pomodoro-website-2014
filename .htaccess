@@ -243,6 +243,15 @@ AddDefaultCharset utf-8
 </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Redirect by translation:
+# http://stackoverflow.com/a/5626743
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+RewriteCond %{REQUEST_URI} !^(/nl/index.html|.*\.(woff|ttf|svg|js|ico|gif|jpg|png|css|htc|xml|txt))$ [NC]
+RewriteCond %{HTTP:Accept-Language} ^nl [NC]
+RewriteRule .* /nl/index.html [R,L,QSA,NE]
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Option 2: rewrite example.com → www.example.com
 
