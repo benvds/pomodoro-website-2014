@@ -247,9 +247,12 @@ AddDefaultCharset utf-8
 # http://stackoverflow.com/a/5626743
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-RewriteCond %{REQUEST_URI} !^(/nl/index.html|.*\.(woff|ttf|svg|js|ico|gif|jpg|png|css|htc|xml|txt))$ [NC]
+RewriteCond %{REQUEST_URI} !^(/(nl|en)/.*|.*\.(woff|ttf|svg|js|ico|gif|jpg|png|css|htc|xml|txt))$ [NC]
 RewriteCond %{HTTP:Accept-Language} ^nl [NC]
-RewriteRule .* /nl/index.html [R,L,QSA,NE]
+RewriteRule .* /nl/ [R,L,QSA,NE]
+
+RewriteCond %{REQUEST_URI} !^(/(nl|en)/.*|.*\.(woff|ttf|svg|js|ico|gif|jpg|png|css|htc|xml|txt))$ [NC]
+RewriteRule .* /en/ [R,L,QSA,NE]
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
