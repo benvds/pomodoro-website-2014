@@ -1,11 +1,11 @@
 {
   "name": "pomodoro-2014",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "dependencies": {
   },
   "devDependencies": {
-    "normalize-css": "~3.0.1",
     "modernizr": "~2.6.2",
-    "jquery": "~2.0.3"
+    "jquery": "~2.1.0",
+    "normalize-scss": "~3.0.1"
   }
 }

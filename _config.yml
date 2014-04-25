@@ -1,0 +1,17 @@
+name: Pomodoro &mdash; Online Customer Experiences
+markdown: redcarpet
+highlighter: pygments
+description: Better features, happier users, faster development
+url: "http://pomodoro.nl"
+exclude:
+- 'Gemfile'
+- 'Gemfile.lock'
+- 'Gruntfile.js'
+- 'README.md'
+- 'bower.json'
+- 'bin'
+- 'bower_components'
+- 'package.json'
+- 'vendor'
+- 'node_modules'
+- '*.scss'
