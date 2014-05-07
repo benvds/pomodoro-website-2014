@@ -11,7 +11,7 @@
 body {
     font-family: 'Arvo', monospace;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
     color: #444;
     text-align: center;
@@ -109,6 +109,10 @@ a:hover {
     width: 10em;
 }
 
+.page-title {
+    font-weight: normal;
+}
+
 .site-nav {
     position: absolute;
     top: 2em;
@@ -127,10 +131,16 @@ a:hover {
     font-size: 150%;
 }
 
-.intro-text {
-    max-width: 19em;
-    margin: 0 0 1em;
-    font-size: 200%;
+.intro h2 {
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.customer-pain {
+    display: block;
+    margin: 2em 0;
+    font-size: 1.5em;
 }
 
 .entry-content {
