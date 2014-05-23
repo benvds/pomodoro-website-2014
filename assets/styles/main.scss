@@ -116,7 +116,7 @@ a:hover {
 .site-nav {
     position: absolute;
     top: 2em;
-    right: 2em;
+    left: 2em;
 }
 .site-nav a {
     padding: 0 .5em;
@@ -223,6 +223,12 @@ a:hover {
 
 .signup form, .contact .vcard {
     text-align: center;
+}
+
+.post img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* MAILCHIMP */
@@ -372,8 +378,8 @@ a:hover {
         display: block;
         position: relative;
         top: auto;
-        right: auto;
-        text-align: right;
+        left: auto;
+        text-align: left;
     }
     .logo-pomodoro {
         margin: 1em 0;

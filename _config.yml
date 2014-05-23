@@ -1,6 +1,7 @@
 name: Pomodoro &mdash; Online Customer Experiences
 markdown: redcarpet
 highlighter: pygments
+permalink: /en/blog/:categories/:title.html
 description: Better features, happier users, faster development
 url: "http://pomodoro.nl"
 exclude:
